@@ -1,4 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700;800&display=swap");
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.v-middle {
+    vertical-align: middle;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+  }

@@ -1,0 +1,18 @@
+.card {
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-top: 5px;
+    color: #114b5f;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0px 0px 0px;
+}

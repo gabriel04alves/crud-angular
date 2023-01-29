@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC Preta",
+      "price": 2
+    },
+    {
+      "id": 2,
+      "name": "Garrafa de água ",
+      "price": "10"
+    },
+    {
+      "id": 3,
+      "name": "Amendoimm",
+      "price": "2"
+    }
+  ]
+}

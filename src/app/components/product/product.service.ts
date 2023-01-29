@@ -16,10 +16,10 @@ export class ProductService {
 
   showMessage(msg: string): void {
     this.snackBar.open(msg, 'X', {
-      duration: 3000,
+    duration: 3000,
       horizontalPosition: 'right',
       verticalPosition: 'top',
-    })
+    });
   }
 
   create(product: Product): Observable<Product> {

@@ -1,0 +1,23 @@
+<mat-card class="card">
+    <mat-card-title style="margin: 9px; color: #114B5F;">Excluir produto</mat-card-title>
+    <form>
+        <mat-form-field appearance="outline" style=" width: 50%;">
+            <mat-label style="color: #114B5F;"> Nome</mat-label>
+            <input type="text" matInput [value]="product.name" name="name" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 17%;">
+            <mat-label>Preço (R$)</mat-label>
+            <input style=" text-align: right;" matInput [value]="product.price" name="price" disabled>
+            <span matTextPrefix>R$&nbsp;</span>
+            <span matTextSuffix>.00</span>
+        </mat-form-field>
+    </form>
+</mat-card>
+<div class="buttons">
+    <button mat-raised-button (click)="deleteProduct()" style="background-color: #FF0000; width: 5.7rem; color: #FFF; ">
+        Excluir
+    </button>
+    <button mat-raised-button (click)="cancel()" style="width: 5.7rem; background-color: #FFF; color: #114B5F; border-style: solid; border-width: 0.7px;">
+        Cancelar
+    </button>    
+</div>

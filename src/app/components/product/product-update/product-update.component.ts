@@ -1,6 +1,6 @@
 import { ProductService } from './../product.service';
 import { Product } from './../product.model';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router, ActivatedRoute } from "@angular/router";
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -18,8 +18,8 @@ export class ProductUpdateComponent implements OnInit{
     ){}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get("id");
-    this.productService.readById(id!).subscribe(product => {
+    const id = +this.route.snapshot.paramMap.get('id')!;
+    this.productService.readById(id).subscribe(product => {
       this.product = product;
     });
   }
